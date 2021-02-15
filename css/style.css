@@ -152,6 +152,7 @@ a {
   outline: none;
   border: none;
   flex-grow: 1;
+  font-size: 16px;
 }
 
 .jumbo-sale .subscrive .email-box .button {
