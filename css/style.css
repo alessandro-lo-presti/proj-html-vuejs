@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #222222;
+}
+
 ul {
   list-style: none;
 }
@@ -11,6 +16,16 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
+}
+
+.button {
+  padding: 20px 30px;
+  border-radius: 50px;
+  background-color: #f2b91e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .container {
@@ -28,7 +43,6 @@ a {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
   font-size: 18px;
-  color: #333333;
 }
 
 .header-top .container {
@@ -63,3 +77,102 @@ a {
 }
 
 /* jumbotron */
+.jumbotron {
+  background-image: url("../img/slide-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.jumbotron .container {
+  height: 835px;
+  position: relative;
+}
+
+.jumbotron .jumbo-title {
+  width: 700px;
+  padding: 5px;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+}
+
+.jumbotron .jumbo-title h1 {
+  font-family: 'Roboto Slab', serif;
+  line-height: 75px;
+  font-size: 70px;
+}
+
+.jumbotron .jumbo-title h1 span {
+  color: #f2b91e;
+}
+
+.jumbotron .jumbo-title p {
+  width: 600px;
+  margin-top: 30px;
+  line-height: 1.6em;
+  font-size: 20px;
+}
+
+/* jumbo-sale */
+.jumbo-sale {
+  height: 235px;
+  width: 100%;
+  padding: 0 65px;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(70px);
+  background-color: #f2b91e;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+.jumbo-sale > div {
+  flex-basis: 50%;
+}
+
+.jumbo-sale span {
+  color: white;
+}
+
+.jumbo-sale .subscrive h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.jumbo-sale .subscrive .email-box {
+  margin-top: 30px;
+  padding-left: 25px;
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumbo-sale .subscrive .email-box input {
+  outline: none;
+  border: none;
+  flex-grow: 1;
+}
+
+.jumbo-sale .subscrive .email-box .button {
+  background-color: #2d4649;
+  margin-left: 25px;
+}
+
+.jumbo-sale .time {
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.jumbo-sale p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.jumbo-sale .time .number {
+  font-size: 70px;
+}
