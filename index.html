@@ -213,13 +213,41 @@
             <div class="cards">
 
               <div class="card" v-for="course in newCourses">
+
                 <img :src="course.img">
-                <h3>{{course.name}}</h3>
-                <p>{{course.type}}</p>
+
+                <div class="card-info-top">
+                  <h3 class="serif">{{course.name}}</h3>
+                  <p>{{course.type}}</p>
+                </div>
+
+                <div class="card-info-bottom">
+
+                  <div>
+                    <i class="fas fa-signal"></i>
+                    <span>{{course.lv}}</span>
+                  </div>
+
+                  <div>
+                    <i class="fas fa-bars"></i>
+                    <span>{{course.lectures}} Lecture</span>
+                  </div>
+
+                  <div>
+                    <i class="far fa-clock"></i>
+                    <span>{{course.hours}} hours</span>
+                  </div>
+
+                </div>
+
               </div>
 
             </div>
             <!-- / cards -->
+
+            <div class="button">
+              Load More
+            </div>
 
           </div>
 

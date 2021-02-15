@@ -6,7 +6,7 @@ var app = new Vue({
         name: "How to be a DJ? Make Electronic Music",
         type: "Eletctronic",
         img: "img/course-1.jpeg",
-        lv: "advanced",
+        lv: "Advanced",
         lectures: "8",
         hours: "6",
         special: true
@@ -15,7 +15,7 @@ var app = new Vue({
         name: "Nvidia and UE4 Technologies Pratice",
         type: "Nvidia",
         img: "img/course-2.png",
-        lv: "advanced",
+        lv: "Advanced",
         lectures: "8",
         hours: "6",
         special: true
@@ -24,7 +24,7 @@ var app = new Vue({
         name: "Fashion Photography form professional",
         type: "Fashion",
         img: "img/course-3.jpeg",
-        lv: "advanced",
+        lv: "Advanced",
         lectures: "6",
         hours: "6",
         special: true
@@ -33,7 +33,7 @@ var app = new Vue({
         name: "Design Instruments for Communication",
         type: "Communication",
         img: "img/course-4.jpeg",
-        lv: "intermediate",
+        lv: "Intermediate",
         lectures: "6",
         hours: "6",
         special: false
@@ -42,7 +42,7 @@ var app = new Vue({
         name: "Nvidia and UE4 Technologies Pratice",
         type: "Nvidia",
         img: "img/course-5.jpg",
-        lv: "intermediate",
+        lv: "Intermediate",
         lectures: "6",
         hours: "6",
         special: false
@@ -51,7 +51,7 @@ var app = new Vue({
         name: "Fashion Photography form professional",
         type: "Fashion",
         img: "img/course-6.jpeg",
-        lv: "beginner",
+        lv: "Beginner",
         lectures: "6",
         hours: "6",
         special: false
