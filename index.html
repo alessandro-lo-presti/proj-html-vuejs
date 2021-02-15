@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
   </head>
 
   <body>
@@ -200,6 +201,30 @@
 
         </section>
         <!-- about -->
+
+        <!-- new-courses -->
+        <section class="new-courses">
+
+          <div class="container">
+
+            <h2 class="serif">New Courses</h2>
+
+            <!-- cards -->
+            <div class="cards">
+
+              <div class="card" v-for="course in newCourses">
+                <img :src="course.img">
+                <h3>{{course.name}}</h3>
+                <p>{{course.type}}</p>
+              </div>
+
+            </div>
+            <!-- / cards -->
+
+          </div>
+
+        </section>
+        <!-- new-courses -->
 
       </main>
       <!-- main -->

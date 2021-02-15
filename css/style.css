@@ -177,7 +177,7 @@ a {
 
 /* main */
 section {
-  padding: 0 60px;
+  padding: 60px;
 }
 
 /* about */
@@ -207,4 +207,29 @@ section {
   margin-top: -60px;
   padding-right: 50px;
   line-height: 35px;
+}
+
+/* new-courses */
+.new-courses {
+  background-color: #edf2f5;
+}
+
+.new-courses .container {
+  flex-direction: column;
+}
+
+.new-courses h2 {
+  text-align: center;
+  font-size: 45px;
+}
+
+.new-courses .cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  text-align: center;
 }
