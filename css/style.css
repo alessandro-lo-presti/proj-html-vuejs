@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header */
+
+/* header-top */
+.header-top {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333333;
+}
+
+.header-top .container {
+  height: 140px;
+  padding: 0 55px;
+}
+
+/* logo */
+.logo img {
+  width: 255px;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .navbar-link {
+  margin-right: 35px;
+}
+
+.navbar .navbar-link li{
+  margin: 0 10px;
+}
+
+.navbar .navbar-social li{
+  margin: 0 8px;
+}
+
+/* jumbotron */
