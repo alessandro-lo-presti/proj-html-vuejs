@@ -406,9 +406,21 @@ section {
   box-shadow: 0 0 20px lightgray;
 }
 
+.why-section .cards .card:hover {
+  background-color: #f2b91e;
+}
+
 .why-section .cards .card .card-left {
   padding-right: 30px;
   font-size: 50px;
+}
+
+.why-section .cards .card .card-left i {
+  color: #f2b91e;
+}
+
+.why-section .cards .card:hover .card-left i {
+  color: white;
 }
 
 .why-section .cards .card .card-left i {
@@ -423,6 +435,10 @@ section {
 .why-section .cards .card .card-right p {
   color: gray;
   line-height: 1.6em;
+}
+
+.why-section .cards .card:hover .card-right p {
+  color: #222222;
 }
 
 /* feedback-section */

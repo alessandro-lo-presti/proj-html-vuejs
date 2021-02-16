@@ -57,6 +57,28 @@ var app = new Vue({
         special: false
       }
     ],
+    feedbackData: [
+      {
+        icon: "fas fa-user-friends",
+        value: 3195,
+        text: "Online Learner"
+      },
+      {
+        icon: "fas fa-video",
+        value: 23,
+        text: "Video Courses"
+      },
+      {
+        icon: "fas fa-images",
+        value: 437,
+        text: "Slider & Images"
+      },
+      {
+        icon: "fas fa-thumbs-up",
+        value: 1440,
+        text: "Excelent Reviews"
+      },
+    ],
     sliderCount: 0,
     slider: [
       {
