@@ -9,7 +9,8 @@ var app = new Vue({
         lv: "Advanced",
         lectures: "8",
         hours: "6",
-        special: true
+        special: true,
+        price: 100
       },
       {
         name: "Nvidia and UE4 Technologies Pratice",
@@ -18,7 +19,8 @@ var app = new Vue({
         lv: "Advanced",
         lectures: "8",
         hours: "6",
-        special: true
+        special: true,
+        price: 90
       },
       {
         name: "Fashion Photography form professional",
@@ -27,7 +29,8 @@ var app = new Vue({
         lv: "Advanced",
         lectures: "6",
         hours: "6",
-        special: true
+        special: true,
+        price: 80
       },
       {
         name: "Design Instruments for Communication",
@@ -36,7 +39,8 @@ var app = new Vue({
         lv: "Intermediate",
         lectures: "6",
         hours: "6",
-        special: false
+        special: false,
+        price: 70
       },
       {
         name: "Nvidia and UE4 Technologies Pratice",
@@ -45,7 +49,8 @@ var app = new Vue({
         lv: "Intermediate",
         lectures: "6",
         hours: "6",
-        special: false
+        special: false,
+        price: 60
       },
       {
         name: "Fashion Photography form professional",
@@ -54,7 +59,8 @@ var app = new Vue({
         lv: "Beginner",
         lectures: "6",
         hours: "6",
-        special: false
+        special: false,
+        price: 50
       }
     ],
     whyCardData: [
@@ -62,7 +68,7 @@ var app = new Vue({
         icon: "fas fa-briefcase",
         title: "Entrepreneurship",
         text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        
+
       },
       {
         icon: "fas fa-rocket",
@@ -124,6 +130,18 @@ var app = new Vue({
         vote: 3,
         title: "Aliquip ex ea commodo consequat",
         review: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      }
+    ],
+    footerArticles: [
+      {
+        img: "img/blog-1b.jpeg",
+        title: 'Our main target is to "Developing Yourself as a Leader"',
+        date: "August 9, 2018"
+      },
+      {
+        img: "img/blog-2b.jpeg",
+        title: 'Those Other College Expenses You Aren\'t Thinking About"',
+        date: "June 3, 2015"
       }
     ]
   },

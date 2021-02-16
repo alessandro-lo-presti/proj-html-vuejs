@@ -217,7 +217,12 @@
 
               <div class="card" v-for="course in newCourses">
 
-                <img :src="course.img">
+                <div class="course-image">
+                  <img :src="course.img">
+                  <div class="layer">
+                    <span class="serif">${{course.price}}</span>
+                  </div>
+                </div>
 
                 <div class="card-info-top">
                   <h3 class="serif">{{course.name}}</h3>
@@ -539,23 +544,13 @@
 
             <h3 class="serif">Blog</h3>
 
-            <div class="blog-article">
-              <img src="img/blog-1b.jpeg" alt="">
+            <div class="blog-article" v-for="article in footerArticles">
+              <img :src="article.img" alt="article">
               <div>
                 <h4 class="serif">
-                  Our main target is to "Developing Yourself as a Leader"
+                  {{article.title}}
                 </h4>
-                <p>- August 9, 2018</p>
-              </div>
-            </div>
-
-            <div class="blog-article">
-              <img src="img/blog-2b.jpeg" alt="">
-              <div>
-                <h4 class="serif">
-                  Our main target is to "Developing Yourself as a Leader"
-                </h4>
-                <p>- August 9, 2018</p>
+                <p>- {{article.date}}</p>
               </div>
             </div>
 
