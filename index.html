@@ -324,61 +324,16 @@
 
             <div class="cards">
 
-              <div class="card">
+              <div class="card" v-for="card in whyCardData">
 
                 <div class="card-left">
-                  <i class="fas fa-briefcase"></i>
+                  <i :class="card.icon"></i>
                 </div>
 
                 <div class="card-right">
-                  <h3>Entrepreneurship</h3>
+                  <h3>{{card.title}}</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-
-              </div>
-
-              <div class="card">
-
-                <div class="card-left">
-                  <i class="fas fa-rocket"></i>
-                </div>
-
-                <div class="card-right">
-                  <h3>Accelerated Learning</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-
-              </div>
-
-              <div class="card">
-
-                <div class="card-left">
-                  <i class="fas fa-thumbs-up"></i>
-                </div>
-
-                <div class="card-right">
-                  <h3>Productivity</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                  </p>
-                </div>
-
-              </div>
-
-              <div class="card">
-
-                <div class="card-left">
-                  <i class="fas fa-cog"></i>
-                </div>
-
-                <div class="card-right">
-                  <h3>Life Coaching</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    {{card.text}}
                   </p>
                 </div>
 
