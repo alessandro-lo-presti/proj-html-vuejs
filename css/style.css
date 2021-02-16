@@ -241,6 +241,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  cursor: pointer;
 }
 
 .new-courses-section .cards .card {
@@ -249,6 +250,7 @@ section {
   margin: 15px;
   background-color: white;
   border: 1px solid lightgray;
+  position: relative;
 }
 
 .new-courses-section .cards .card .card-info-top {
@@ -274,6 +276,18 @@ section {
 
 .new-courses-section .cards .card .card-info-bottom i {
   color: #f2b91e;
+}
+
+.new-courses-section .cards .card .special {
+  padding: 5px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #f09b23;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
 }
 
 /* book-section */
