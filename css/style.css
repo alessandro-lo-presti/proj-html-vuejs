@@ -29,6 +29,10 @@ a {
   cursor: pointer;
 }
 
+.img-button {
+  cursor: pointer;
+}
+
 .serif {
   font-family: 'Roboto Slab', serif;
   font-weight: bold;
@@ -280,13 +284,14 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+  position: relative;
 }
 
 .book-section .container {
   align-items: center;
 }
 
-.book-section .container > div {
+.book-section .container > div:not(.right-side-menu) {
   width: 50%;
   text-align: center;
 }
@@ -307,6 +312,25 @@ section {
 
 .book-section div:last-child img {
   margin-top: 37px;
+}
+
+.book-section .right-side-menu {
+  padding: 10px 15px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  text-align: center;
+  color: #222222;
+  font-size: 25px;
+}
+
+.book-section .right-side-menu div {
+  padding: 10px 0;
+}
+
+.book-section .right-side-menu div i {
+  cursor: pointer;
 }
 
 /* why-section */
