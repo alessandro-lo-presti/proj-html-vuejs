@@ -345,3 +345,37 @@ section {
   color: gray;
   line-height: 1.6em;
 }
+
+/* feedback-section */
+.feedback-section {
+  background-image: url("../img/feedback.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  color: white;
+}
+
+.feedback-section .feedback-box {
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.feedback-section .feedback-box .box-left {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.feedback-section .feedback-box i {
+  font-size: 50px;
+}
+
+.feedback-section .feedback-box h3 {
+  font-size: 40px;
+  color: #f2b91e;
+}
+
+.feedback-section .feedback-box p {
+  font-weight: bold;
+}
