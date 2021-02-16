@@ -211,7 +211,6 @@ section {
 }
 
 .about-section .info {
-  /* margin-top: 60px; */
   padding-right: 50px;
   line-height: 35px;
 }
@@ -223,6 +222,7 @@ section {
 
 .new-courses-section .container {
   flex-direction: column;
+  align-items: center;
 }
 
 .new-courses-section h2 {
@@ -280,6 +280,10 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
+}
+
+.book-section .container {
+  align-items: center;
 }
 
 .book-section .container > div {
@@ -356,6 +360,10 @@ section {
   background-repeat: no-repeat;
   background-position: center top;
   color: white;
+}
+
+.feedback-section .container {
+  justify-content: space-around;
 }
 
 .feedback-section .feedback-box {
