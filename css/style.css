@@ -426,13 +426,51 @@ footer .container .footer-section h3 {
   font-size: 22px;
 }
 
-footer .container .footer-section p {
+footer .container .footer-section > p {
   margin-bottom: 15px;
   padding-right: 20px;
 }
 
+footer .container .footer-section span {
+  font-size: 15px;
+}
+
 footer .container .footer-section i {
   font-size: 20px;
-  margin-right: 10px;
   cursor: pointer;
+  margin-right: 10px;
+}
+
+
+footer .container .footer-section .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .container .footer-section .list div {
+  margin-bottom: 20px;
+  flex-basis: calc(50% - 10px);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  /* non funziona ? */
+  /* text-overflow: ellipsis; */
+}
+
+footer .container .footer-section .list i {
+  font-size: 5px;
+}
+
+footer .container .footer-section .blog-article {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+footer .container .footer-section .blog-article img{
+  margin-right: 20px;
+}
+
+footer .container .footer-section .blog-article p{
+  font-size: 12px;
 }
