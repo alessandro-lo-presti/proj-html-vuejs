@@ -183,51 +183,52 @@ section {
   padding: 60px;
 }
 
-/* about */
-.about {
+/* about-section */
+.about-section {
   padding-top: 130px;
   display: flex;
+  justify-content: space-around
 }
 
-.about .container > div {
-    flex-basis: 50%;
+.about-section .container > div {
+  flex-basis: 45%;
 }
 
-.about .signature {
-  padding: 60px 100px;
+.about-section .signature {
+  padding: 60px 0;
   text-align: center;
 }
 
-.about .signature h2 {
+.about-section .signature h2 {
   font-size: 35px;
 }
 
-.about .signature img {
+.about-section .signature img {
   margin-top: 50px;
 }
 
-.about .info {
+.about-section .info {
   margin-top: -60px;
   padding-right: 50px;
   line-height: 35px;
 }
 
-/* new-courses */
-.new-courses {
+/* new-courses-section */
+.new-courses-section {
   background-color: #edf2f5;
 }
 
-.new-courses .container {
+.new-courses-section .container {
   flex-direction: column;
 }
 
-.new-courses h2 {
+.new-courses-section h2 {
   text-align: center;
   font-size: 45px;
   margin-bottom: 40px;
 }
 
-.new-courses .cards {
+.new-courses-section .cards {
   width: 100%;
   margin-bottom: 40px;
   display: flex;
@@ -235,7 +236,7 @@ section {
   justify-content: center;
 }
 
-.new-courses .cards .card {
+.new-courses-section .cards .card {
   flex-basis: 370px;
   text-align: center;
   margin: 15px;
@@ -243,28 +244,28 @@ section {
   border: 1px solid lightgray;
 }
 
-.new-courses .cards .card .card-info-top {
+.new-courses-section .cards .card .card-info-top {
   margin: 30px 30px 0;
   border-bottom: 1px solid lightgray;
 }
 
-.new-courses .cards .card .card-info-top h3 {
+.new-courses-section .cards .card .card-info-top h3 {
   margin-bottom: 20px;
 }
 
-.new-courses .cards .card .card-info-top p {
+.new-courses-section .cards .card .card-info-top p {
   padding-bottom: 25px;
   color: gray;
 }
 
-.new-courses .cards .card .card-info-bottom {
+.new-courses-section .cards .card .card-info-bottom {
   display: flex;
   justify-content: space-around;
   padding: 20px;
   font-size: 14px;
 }
 
-.new-courses .cards .card .card-info-bottom i {
+.new-courses-section .cards .card .card-info-bottom i {
   color: #f2b91e;
 }
 
@@ -378,4 +379,21 @@ section {
 
 .feedback-section .feedback-box p {
   font-weight: bold;
+}
+
+/* student-section */
+.student-section .container {
+  max-width: 750px;
+  text-align: center;
+  flex-direction: column;
+}
+
+.student-section h2 {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.student-section p {
+  font-size: 18px;
+  line-height: 27px;
 }
