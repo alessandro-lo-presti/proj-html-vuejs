@@ -480,6 +480,45 @@ section {
   line-height: 27px;
 }
 
+.student-section .slider .top {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.student-section .slider .top .students {
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-section .slider .top .students .student img {
+  margin: 0 10px;
+  border-radius: 50%;
+  width: 70px;
+}
+
+.student-section .slider .top .students .student.current img {
+  width: 100px;
+}
+
+.student-section .slider .down {
+  margin-bottom: 30px;
+}
+
+.student-section .slider .down h3{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.student-section .slider .down i {
+  color: #f2b91e;
+  font-size: 18px;
+}
+
 /* footer */
 footer {
   padding: 60px 0;

@@ -56,6 +56,26 @@ var app = new Vue({
         hours: "6",
         special: false
       }
+    ],
+    sliderCount: 0,
+    slider: [
+      {
+        img: "img/1-100x100.jpg"
+      },
+      {
+        img: "img/2-100x100.jpg"
+      },
+      {
+        img: "img/4-100x100.jpg"
+      }
     ]
+  },
+  methods: {
+    prevSlider() {
+      this.sliderCount ? this.sliderCount-- : this.sliderCount = this.slider.length - 1;
+    },
+    nextSlider() {
+      (this.sliderCount < this.slider.length - 1) ? this.sliderCount++ : this.sliderCount = 0;
+    }
   }
 });
