@@ -437,7 +437,6 @@ footer .container .footer-section span {
 
 footer .container .footer-section i {
   font-size: 20px;
-  cursor: pointer;
   margin-right: 10px;
 }
 
@@ -458,6 +457,10 @@ footer .container .footer-section .list div {
   /* text-overflow: ellipsis; */
 }
 
+footer .container .footer-section .list div:hover a {
+  text-decoration: underline;
+}
+
 footer .container .footer-section .list i {
   font-size: 5px;
 }
@@ -465,6 +468,7 @@ footer .container .footer-section .list i {
 footer .container .footer-section .blog-article {
   margin-bottom: 30px;
   display: flex;
+  cursor: pointer;
 }
 
 footer .container .footer-section .blog-article img{
