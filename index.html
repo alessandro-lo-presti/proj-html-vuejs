@@ -131,39 +131,12 @@
 
               <div class="time">
 
-                <div>
+                <div v-for="time in timer">
                   <p class="number">
-                    <span>00</span>
+                    <span>{{time.value}}</span>
                   </p>
                   <p>
-                    Days
-                  </p>
-                </div>
-
-                <div>
-                  <p class="number">
-                    <span>00</span>
-                  </p>
-                  <p>
-                    Hours
-                  </p>
-                </div>
-
-                <div>
-                  <p class="number">
-                    <span>00</span>
-                  </p>
-                  <p>
-                    Minutes
-                  </p>
-                </div>
-
-                <div>
-                  <p class="number">
-                    <span>00</span>
-                  </p>
-                  <p>
-                    Seconds
+                    {{time.name}}
                   </p>
                 </div>
 

@@ -1,6 +1,24 @@
 var app = new Vue({
   el: "#app",
   data: {
+    timer: [
+      {
+        name: "Days",
+        value: 26
+      },
+      {
+        name: "Hours",
+        value: 01
+      },
+      {
+        name: "Minutes",
+        value: 47
+      },
+      {
+        name: "Seconds",
+        value: 59
+      }
+    ],
     newCourses: [
       {
         name: "How to be a DJ? Make Electronic Music",
