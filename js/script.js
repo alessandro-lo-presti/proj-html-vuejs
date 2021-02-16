@@ -163,12 +163,24 @@ var app = new Vue({
       }
     ]
   },
+  created() {
+    setInterval(this.upTimer, 1000);
+  },
   methods: {
     prevSlider() {
       this.sliderCount ? this.sliderCount-- : this.sliderCount = this.slider.length - 1;
     },
     nextSlider() {
       (this.sliderCount < this.slider.length - 1) ? this.sliderCount++ : this.sliderCount = 0;
+    },
+    upTimer() {
+      if(this.timer[3].value == 0) {
+        this.timer[3].value = 59;
+        this.timer[2].value--;
+      }
+      else {
+        this.timer[3].value--;
+      }
     }
   }
 });
