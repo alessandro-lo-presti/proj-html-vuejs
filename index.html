@@ -387,7 +387,7 @@
                 <div class="students">
 
                   <div class="student">
-                    <img :src="slider[(sliderCount + 1) % slider.length].img" alt="studente">
+                    <img :src="slider[(sliderCount + 1) % slider.length].img" alt="studente" @click="nextSlider">
                   </div>
 
                   <div class="student current">
@@ -395,7 +395,7 @@
                   </div>
 
                   <div class="student">
-                    <img :src="slider[(sliderCount + slider.length - 1) % slider.length].img" alt="studente">
+                    <img :src="slider[(sliderCount + slider.length - 1) % slider.length].img" alt="studente" @click="prevSlider">
                   </div>
 
                 </div>

@@ -505,6 +505,10 @@ section {
   font-size: 30px;
 }
 
+.student-section .slider .top .prev, .student-section .slider .top .next {
+  cursor: pointer;
+}
+
 .student-section .slider .top .students {
   margin: 0 30px;
   display: flex;
@@ -516,6 +520,7 @@ section {
   margin: 0 10px;
   border-radius: 50%;
   width: 70px;
+  cursor: pointer;
 }
 
 .student-section .slider .top .students .student.current img {
