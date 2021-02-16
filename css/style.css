@@ -378,6 +378,12 @@ section {
 
 .book-section .right-side-menu div i {
   cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.book-section .right-side-menu div i:hover {
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 /* why-section */
