@@ -74,12 +74,45 @@ a {
   margin-right: 35px;
 }
 
-.navbar .navbar-link li{
+.navbar .navbar-link .navbar-link {
   margin: 0 12px;
 }
 
-.navbar .navbar-social li{
+.navbar .navbar-link .nav-link {
+  margin: 0 12px;
+  position: relative;
+}
+
+.navbar .navbar-link .nav-link:hover::after, .navbar .navbar-link .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 80%;
+  transform: translateX(10%);
+  border: 1px solid #f2b91e;
+  text-align: center;
+  color: #f2b91e;
+}
+
+.navbar .navbar-link .nav-link .new {
+  padding: 2px 3px;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  background-color: #dc1245;
+  color: white;
+  text-transform: uppercase;
+  font-size: 9px;
+  border-radius: 2px;
+}
+
+.navbar .navbar-social .nav-social {
   margin: 0 8px;
+}
+
+.navbar .navbar-social .nav-social:hover {
+  color: #f2b91e;
 }
 
 /* jumbotron */
