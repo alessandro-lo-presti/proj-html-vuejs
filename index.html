@@ -492,22 +492,21 @@
 
               <div class="down">
 
-                <h3 class="serif">Paints of the future</h3>
+                <h3 class="serif">
+                  {{slider[sliderCount].title}}
+                </h3>
 
                 <div class="vote">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+                  <i v-for="i in slider[sliderCount].vote" class="fas fa-star"></i>
                 </div>
 
               </div>
 
-
             </div>
 
-            <p>The response to your MasterStudy has been really overwhelming! Those who participated in the workshop are spreading the word here on campus and the "buzz" is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. Our President told me Masterstudy needs to be the cornerstone of our success program.</p>
+            <p>
+              {{slider[sliderCount].review}}
+            </p>
 
           </div>
 

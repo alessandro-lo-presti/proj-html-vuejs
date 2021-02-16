@@ -466,6 +466,7 @@ section {
 /* student-section */
 .student-section .container {
   max-width: 750px;
+  height: 500px;
   text-align: center;
   flex-direction: column;
 }
@@ -515,6 +516,7 @@ section {
 }
 
 .student-section .slider .down i {
+  margin: 2px;
   color: #f2b91e;
   font-size: 18px;
 }

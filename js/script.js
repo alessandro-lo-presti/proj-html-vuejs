@@ -60,13 +60,22 @@ var app = new Vue({
     sliderCount: 0,
     slider: [
       {
-        img: "img/1-100x100.jpg"
+        img: "img/1-100x100.jpg",
+        vote: 5,
+        title: "Paints of the future",
+        review: 'The response to your MasterStudy has been really overwhelming! Those who participated in the workshop are spreading the word here on campus and the "buzz" is on. The VP of Instruction wants you to come back! Her goal is to have more faculty trained. She also wants to attend a workshop herself. Our President told me Masterstudy needs to be the cornerstone of our success program.'
       },
       {
-        img: "img/2-100x100.jpg"
+        img: "img/2-100x100.jpg",
+        vote: 4,
+        title: "Deserunt mollit anim id est laborum",
+        review: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.'
       },
       {
-        img: "img/4-100x100.jpg"
+        img: "img/4-100x100.jpg",
+        vote: 3,
+        title: "Aliquip ex ea commodo consequat",
+        review: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut . Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       }
     ]
   },
