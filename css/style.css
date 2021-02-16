@@ -38,8 +38,6 @@ a {
   max-width: 1300px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* header */
@@ -49,6 +47,8 @@ a {
   height: 140px;
   padding: 0 55px;
   font-size: 18px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* logo */
@@ -186,8 +186,11 @@ section {
 /* about-section */
 .about-section {
   padding-top: 130px;
-  display: flex;
-  justify-content: space-around
+}
+
+.about-section .container {
+  justify-content: space-around;
+  align-items: center;
 }
 
 .about-section .container > div {
@@ -208,7 +211,7 @@ section {
 }
 
 .about-section .info {
-  margin-top: -60px;
+  /* margin-top: 60px; */
   padding-right: 50px;
   line-height: 35px;
 }
@@ -358,7 +361,7 @@ section {
 .feedback-section .feedback-box {
   height: 450px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -397,3 +400,5 @@ section {
   font-size: 18px;
   line-height: 27px;
 }
+
+/* footer */
