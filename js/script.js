@@ -1,6 +1,7 @@
 var app = new Vue({
   el: "#app",
   data: {
+    menu: false,
     timer: [
       {
         name: "Days",

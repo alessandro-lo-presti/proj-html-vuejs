@@ -32,12 +32,18 @@
             </div>
             <!-- / logo -->
 
-            <div class="hamburger-menu">
+            <!-- hamburger-menu -->
+            <div class="hamburger-menu" @click="menu = true">
               <i class="fas fa-bars"></i>
             </div>
+            <!-- / hamburger-menu -->
 
             <!-- navbar -->
-            <nav class="navbar serif">
+            <nav class="navbar serif" :class="(menu) ? 'active' : ''">
+
+              <div class="close" @click="menu = false">
+                <i class="fas fa-times"></i>
+              </div>
 
               <div class="navbar-link">
                 <ul>

@@ -72,9 +72,17 @@ a {
   display: none;
 }
 
+.hamburger-menu:hover {
+  color: #f2b91e;
+}
+
 /* navbar */
 .navbar {
   display: flex;
+}
+
+.navbar .close {
+  display: none;
 }
 
 .navbar ul {
@@ -727,6 +735,76 @@ footer .container .footer-section .blog-article p{
 
   .header-top .navbar-social {
     display: flex;
+  }
+
+  /* menu */
+  .navbar.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 1;
+    color: #222222;
+    flex-direction: column;
+    font-size: 25px;
+  }
+
+  .navbar.active .close {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navbar.active .close:hover {
+    color: #f2b91e;
+  }
+
+  .navbar ul {
+    display: flex;
+    margin-left: 20px;
+    width: 200px;
+    justify-content: flex-start;
+  }
+
+  .navbar .navbar-link ul {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .navbar .navbar-link {
+    margin-right: 0px;
+  }
+
+  .navbar .navbar-link .nav-link {
+    margin: 10px 0;
+    position: relative;
+  }
+
+  .navbar .navbar-link .nav-link:hover, .navbar .navbar-link .nav-link.active {
+    color: #f2b91e;
+  }
+
+  .navbar .navbar-link .nav-link:hover::after, .navbar .navbar-link .nav-link.active::after {
+    display: none;
+  }
+
+  .navbar .navbar-link .nav-link .new {
+    display: none;
+  }
+
+  .navbar .navbar-social .nav-social {
+    margin: 0;
+    margin-right: 16px;
+  }
+
+  .navbar .navbar-social .nav-social:hover {
+    color: #f2b91e;
   }
 
   /* jumbotron */
