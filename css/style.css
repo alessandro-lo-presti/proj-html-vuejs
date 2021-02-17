@@ -44,6 +44,12 @@ a {
   display: flex;
 }
 
+.b-i {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
 /* header */
 
 /* header-top */
@@ -118,8 +124,6 @@ a {
 /* jumbotron */
 .jumbotron {
   background-image: url("../img/slide-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .jumbotron .container {
@@ -221,11 +225,8 @@ section {
 }
 
 /* about-section */
-.about-section {
-  padding-top: 130px;
-}
-
 .about-section .container {
+  margin-top: 70px;
   justify-content: space-around;
   align-items: center;
 }
@@ -351,8 +352,6 @@ section {
   padding: 0;
   height:  606px;
   background-image: url("../img/slider_1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
   color: white;
   position: relative;
 }
@@ -376,12 +375,12 @@ section {
   font-size: 30px;
 }
 
-.book-section div:first-child img {
-  cursor: pointer;
+.book-section img {
+  margin-top: 37px;
 }
 
-.book-section div:last-child img {
-  margin-top: 37px;
+.book-section div .img-button {
+  cursor: pointer;
 }
 
 .book-section .right-side-menu {
@@ -473,8 +472,6 @@ section {
 /* feedback-section */
 .feedback-section {
   background-image: url("../img/feedback.jpg");
-  background-repeat: no-repeat;
-  background-position: center top;
   color: white;
 }
 
@@ -573,13 +570,14 @@ section {
 
 /* footer */
 footer {
-  padding: 60px 0;
+  padding: 30px 0 60px;
   background-color: #f2b91e;
 }
 
 footer .container .footer-section {
   flex-basis: 25%;
   padding-right: 20px;
+  margin-top: 30px;
 }
 
 footer .container .footer-section h3 {
@@ -628,6 +626,7 @@ footer .container .footer-section .list i {
 }
 
 footer .container .footer-section .blog-article {
+  max-width: 400px;
   margin-bottom: 30px;
   display: flex;
   cursor: pointer;
@@ -639,4 +638,44 @@ footer .container .footer-section .blog-article img{
 
 footer .container .footer-section .blog-article p{
   font-size: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  /* footer */
+  footer .container {
+    flex-wrap: wrap;
+  }
+
+  footer .container .footer-section {
+    flex-basis: 50%;
+    padding: 0 30px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  /* footer */
+  footer .container .footer-section {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  footer .container .footer-section .list div {
+    justify-content:center;
+  }
+
+  .blog-article {
+    margin: auto;
+  }
+
 }
