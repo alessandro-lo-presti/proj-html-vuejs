@@ -655,12 +655,30 @@ footer .container .footer-section .blog-article p{
 
 @media screen and (max-width: 992px) {
 
+  /* feedback-section */
+  .feedback-section .container {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .feedback-section .feedback-box {
+    height: 200px;
+    flex-basis: 40%;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
 
   .section-title {
     font-size: 35px;
+  }
+
+  /* feedback-section */
+
+  .feedback-section .feedback-box {
+    height: 150px;
+    flex-basis: 100%;
   }
 
   /* student section */
