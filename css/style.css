@@ -133,9 +133,8 @@ a {
 
 .jumbotron .jumbo-title {
   width: 700px;
-  padding: 5px;
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 45%;
 }
 
@@ -149,7 +148,7 @@ a {
 }
 
 .jumbotron .jumbo-title p {
-  width: 600px;
+  max-width: 600px;
   margin-top: 30px;
   line-height: 1.6em;
   font-size: 20px;
@@ -210,6 +209,11 @@ a {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.jumbo-sale .time .time-box {
+  flex-basis: 20%;
 }
 
 .jumbo-sale p {
@@ -654,6 +658,17 @@ footer .container .footer-section .blog-article p{
 
 @media screen and (max-width: 1200px) {
 
+  /* jumbotron */
+  .jumbotron .jumbo-title {
+    width: 550px;
+    top: 25%;
+    left: 45%;
+  }
+
+  .jumbotron .jumbo-title h1 {
+    font-size: 60px;
+  }
+
   /* book-section */
   .book-section .container {
     justify-content: center;
@@ -686,6 +701,11 @@ footer .container .footer-section .blog-article p{
 @media screen and (max-width: 992px) {
 
   /* jumbotron */
+  .jumbotron .jumbo-title {
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+  }
 
   /* jumbo-sale */
   .jumbo-sale > div {
@@ -730,6 +750,20 @@ footer .container .footer-section .blog-article p{
     font-size: 35px;
   }
 
+  /* jumbotron */
+  .jumbotron .jumbo-title {
+    width: 450px;
+    left: 60%;
+  }
+
+  .jumbotron .jumbo-title h1 {
+    font-size: 50px;
+  }
+
+  .jumbotron .jumbo-title p {
+    font-size: 18px;
+  }
+
   /* why-section */
   .why-section .cards .card .card-left {
     font-size: 30px;
@@ -758,6 +792,25 @@ footer .container .footer-section .blog-article p{
 }
 
 @media screen and (max-width: 600px) {
+
+  /* jumbotron */
+  .jumbotron .jumbo-title {
+    width: 400px;
+    left: 52%;
+  }
+
+  .jumbotron .jumbo-title h1 {
+    font-size: 45px;
+  }
+
+  /* jumbo-sale */
+  .jumbo-sale {
+    transform: translateY(120px);
+  }
+
+  .jumbo-sale .time .time-box {
+    flex-basis: 40%;
+  }
 
   /* footer */
   footer .container .footer-section {
