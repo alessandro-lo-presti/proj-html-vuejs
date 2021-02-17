@@ -352,20 +352,31 @@ section {
 
 /* book-section */
 .book-section {
-  padding: 0;
-  height:  606px;
+  padding: 60px 0 0;
   background-image: url("../img/slider_1.jpg");
   color: white;
   position: relative;
 }
 
 .book-section .container {
-  align-items: center;
+  min-height: 606px;
+  flex-wrap: wrap;
 }
 
 .book-section .container > div:not(.right-side-menu) {
-  width: 50%;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+}
+
+.book-section .container .box-left {
+  justify-content: center;
+  align-items: center;
+}
+
+.book-section .container .book-right {
+  justify-content: flex-end;
 }
 
 .book-section .container h2 {
@@ -377,12 +388,9 @@ section {
   font-size: 30px;
 }
 
-.book-section img {
-  margin-top: 37px;
-}
-
 .book-section div .img-button {
   cursor: pointer;
+  width: 200px;
 }
 
 .book-section .right-side-menu {
@@ -645,6 +653,27 @@ footer .container .footer-section .blog-article p{
 
 @media screen and (max-width: 1200px) {
 
+  /* book-section */
+  .book-section .container {
+    justify-content: center;
+  }
+
+  .book-section .container > div:not(.right-side-menu) {
+    flex-basis: 60%;
+  }
+
+  .book-section .box-left {
+    margin-bottom: 50px;
+  }
+
+  .book-section .box-left p{
+    font-size: 25px;
+  }
+
+  .book-section .box-right img{
+    width: 100%;
+  }
+
   /* footer */
   footer .container .footer-section {
     flex-basis: 50%;
@@ -658,6 +687,12 @@ footer .container .footer-section .blog-article p{
   /* about-section */
   .about-section .container > div {
     flex-basis: 100%;
+  }
+
+  /* book-section */
+  .book-section .right-side-menu {
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* feedback-section */
